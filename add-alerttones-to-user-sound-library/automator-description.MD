@@ -3,7 +3,7 @@
 Find Finder Items
 - Search /System/Library/PrivateFrameworks/ToneLibrary.framework/Versions/A/Resources/AlertTones/
 - All of the following are true
--- File extension IS caf
+    - File extension IS caf
 
 Copy Finder Items
 - To ~/Library/Sounds

@@ -32,11 +32,12 @@ Since GitHub can't display Automator workflows in an easy-to-read format, here's
 - Add Text
 - ""
 - before name
+This extra character entry is used to track the new files in the shell script below.
 
 ### Run Shell Script
 ~~~~
 #!/bin/bash
-# Additional Finder item renaming, targeting every file with the Apple logo character. Replace dashes and underscores with spaces, capitalize 'SMS', add a space before series numbers. Remove Apple logo upon completion.
+# Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo to tracked files upon completion.
 
 for file in ~/Library/Sounds/**
 	do
@@ -45,6 +46,7 @@ for file in ~/Library/Sounds/**
 	sed 's/_/ /g' | \
 	sed 's/Sms/SMS/g' | \
 	sed 's/[0-9]/ &/g' | \
+	sed 's/Receivedmessage/Received Message/g' | \
 	tr -d `"
 done
 ~~~~

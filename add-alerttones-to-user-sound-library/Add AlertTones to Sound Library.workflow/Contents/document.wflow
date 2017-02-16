@@ -1307,7 +1307,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string># Additional Finder item renaming, targeting every file with the Apple logo character. Replace dashes and underscores with spaces, capitalize 'SMS', add a space before series numbers. Remove Apple logo upon completion.
+					<string># Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo to tracked files upon completion.
 
 for file in ~/Library/Sounds/**
 	do
@@ -1316,6 +1316,7 @@ for file in ~/Library/Sounds/**
 	sed 's/_/ /g' | \
 	sed 's/Sms/SMS/g' | \
 	sed 's/[0-9]/ &amp;/g' | \
+	sed 's/Receivedmessage/Received Message/g' | \
 	tr -d `"
 done
 </string>
@@ -1441,33 +1442,33 @@ done
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>5723E58B-69A5-4657-AFB6-620D57F96650</key>
-		<dict>
-			<key>from</key>
-			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>
-			<key>to</key>
-			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
-		</dict>
-		<key>695871A4-2100-4CF5-B343-9C53021C14F7</key>
+		<key>21DD5E26-D5C8-4E9D-B813-78A00AD24C43</key>
 		<dict>
 			<key>from</key>
 			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
 			<key>to</key>
 			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>
 		</dict>
-		<key>B6378E01-5921-4925-B0A0-28E4582D712B</key>
+		<key>2D47D54C-B4A2-4F4A-8AAE-AE2730EFC354</key>
+		<dict>
+			<key>from</key>
+			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
+			<key>to</key>
+			<string>418E908B-D285-4DEF-9255-12DBAF2E77B3 - 418E908B-D285-4DEF-9255-12DBAF2E77B3</string>
+		</dict>
+		<key>9321552B-C4B2-406C-9E43-D7BED7868993</key>
 		<dict>
 			<key>from</key>
 			<string>73CCA856-A32C-4DED-9477-C4B2277E130A - 73CCA856-A32C-4DED-9477-C4B2277E130A</string>
 			<key>to</key>
 			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
 		</dict>
-		<key>D9FD2988-3696-45E4-92A2-F49F03E64CAC</key>
+		<key>D3668397-52A1-43C6-AAA8-3ADEED2C4C54</key>
 		<dict>
 			<key>from</key>
-			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
+			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>
 			<key>to</key>
-			<string>418E908B-D285-4DEF-9255-12DBAF2E77B3 - 418E908B-D285-4DEF-9255-12DBAF2E77B3</string>
+			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>

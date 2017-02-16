@@ -4,11 +4,11 @@
 
 This macOS Automator workflow copies the audio files (all files with .caf extension) from `/System/Library/PrivateFrameworks/ToneLibrary.framework/Versions/A/Resources/AlertTones/` to `~/Library/Sounds`, then reformats their names for easier legibility when selecting sounds in *System Preferences > Sounds*.
 
-Inspired by a [Six Colors post from Jason Snell lamenting the staleness of macOS' default system sounds](https://sixcolors.com/post/2016/10/wish-list-new-mac-alert-sounds/ "Six Colors - Wish List: New Mac Alert Sounds"). He brought the existence of the AlertTones to my attention, and I figured others might want a method of using these files alongside the classic sounds.
+Inspired by a [Six Colors post from Jason Snell lamenting the staleness of macOS' default system sounds](https://sixcolors.com/post/2016/10/wish-list-new-mac-alert-sounds/ "Six Colors - Wish List: New Mac Alert Sounds"). He brought the existence of the AlertTones folder to my attention, and I figured others might want a method of using these files alongside the classic sounds.
 
 ## Instructions
 
-Open the .workflow file in Automator to run this on your Mac. Typically it would only need to be run once, but you could save it as an application or service if you want to access it regularly for some reason (it should overwrite any files it's previously copied over).
+Open the .workflow file in Automator to run this on your Mac. Typically it would only need to be run once, but you could save it as an application or service if you want to access it regularly for some reason (it should overwrite any files it's previously copied over as long as Apple hasn't changed their names).
 
 ## Automator Workflow Breakdown
 
@@ -36,6 +36,7 @@ Since GitHub can't display Automator workflows in an easy-to-read format, here's
 ### Run Shell Script
 ~~~~
 #!/bin/bash
+# Additional Finder item renaming, targeting every file with the Apple logo character. Replace dashes and underscores with spaces, capitalize 'SMS', add a space before series numbers. Remove Apple logo upon completion.
 
 for file in ~/Library/Sounds/**
 	do

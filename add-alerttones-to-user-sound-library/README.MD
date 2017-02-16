@@ -32,6 +32,7 @@ Since GitHub can't display Automator workflows in an easy-to-read format, here's
 - Add Text
 - ""
 - before name
+
 This extra character entry is used to track the new files in the shell script below.
 
 ### Run Shell Script

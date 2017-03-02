@@ -8,7 +8,10 @@ Inspired by a [Six Colors post from Jason Snell lamenting the staleness of macOS
 
 ## Instructions
 
-Open the .workflow file in Automator to run this on your Mac. Typically it would only need to be run once, but you could save it as an application or service if you want to access it regularly for some reason (it should overwrite any files it's previously copied over as long as Apple hasn't changed their names).
+1. Download the `Add AlertTones to Sound Library.workflow` file.
+2. Open the .workflow file in Automator to run this on your Mac.
+
+Typically it would only need to be run once, but you could save it as an application or service if you want to access it regularly for some reason (it should overwrite any files it's previously copied over as long as Apple hasn't changed their names).
 
 ## Automator Workflow Breakdown
 

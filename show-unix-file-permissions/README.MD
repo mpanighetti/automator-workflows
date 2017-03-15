@@ -18,6 +18,8 @@ Note that the dialog box will probably not scale well depending on how many file
 
 To run the action in the future, select the target files or folders in the Finder, then right-click and select *Services > Show Unix File Permissions*.
 
+![Show Unix File Permissions example screenshot of results](show-permissions-example.png?raw=true "Show Unix File Permissions Example Screenshot")
+
 ## Automator Workflow Breakdown
 
 Since GitHub can't display Automator workflows in an easy-to-read format, here's a breakdown of all the actions. Feel free to recreate manually if you'd rather not run mysterious workflows from the Internet.

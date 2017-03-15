@@ -11,3 +11,6 @@ Copies the audio files (all files with .caf extension) from `/System/Library/Pri
 
 ### Scale Images to 50%
 Duplicates image files selected in the Finder, resizes those copies' dimensions to 50%, and renames them to end in "-half" for differentiation.
+
+### Show Unix File Permissions
+Reads the Unix file permissions of selected Finder files and folders, and displays them in a dialog box.

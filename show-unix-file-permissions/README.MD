@@ -4,7 +4,7 @@
 
 This macOS Automator workflow reads the Unix file permissions of selected Finder files and folders, and displays them in a dialog box.
 
-Inspired by [a request for this feature in MacAdmins Slack](https://macadmins.org/ "MacAdmins Slack"). Though this same behavior can be accomplished in the Terminal (`ls -ld *`), this workflow allows a quick glimpse of selected files without requiring a context change via application switch.
+Inspired by [a request for this feature in MacAdmins Slack](http://macadmins.org/ "MacAdmins Slack"). Though this same behavior can be accomplished in the Terminal (`ls -ld *`), this workflow allows a quick glimpse of selected files without requiring a context change via application switch.
 
 Note that the dialog box will probably not scale well depending on how many files are selected when the service is run. It also has an issue where files with spaces in their names display each space-separated word on its own line. An AppleScript dialog box would parse better, but I try to use native Automator actions whenever possible, so I leave that as an exercise to the reader.
 

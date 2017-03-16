@@ -346,8 +346,6 @@ done</string>
 					<string>OK</string>
 					<key>displayWarning</key>
 					<false/>
-					<key>explanationText</key>
-					<string></string>
 					<key>negativeTitle</key>
 					<string>Cancel</string>
 					<key>questionText</key>
@@ -466,19 +464,19 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>58E20681-191C-420C-97BF-6C057835540A</key>
-		<dict>
-			<key>from</key>
-			<string>D606FCB0-487D-49E3-9695-5A6649F3EE87 - D606FCB0-487D-49E3-9695-5A6649F3EE87</string>
-			<key>to</key>
-			<string>DE8CA8FA-9BC3-4CAD-A5C3-8B5B22E3C37A - DE8CA8FA-9BC3-4CAD-A5C3-8B5B22E3C37A</string>
-		</dict>
-		<key>E37F2BE2-190B-4931-8A95-0E6869CFB1DE</key>
+		<key>5D7E12C0-6065-46D4-9FA4-07FF047F3900</key>
 		<dict>
 			<key>from</key>
 			<string>DE8CA8FA-9BC3-4CAD-A5C3-8B5B22E3C37A - DE8CA8FA-9BC3-4CAD-A5C3-8B5B22E3C37A</string>
 			<key>to</key>
 			<string>6FF620C4-B2A9-4FC3-9699-D9EE37296D7A - 6FF620C4-B2A9-4FC3-9699-D9EE37296D7A</string>
+		</dict>
+		<key>E8AAC8F6-BEED-4A8E-A4A7-D2F3ADB53057</key>
+		<dict>
+			<key>from</key>
+			<string>D606FCB0-487D-49E3-9695-5A6649F3EE87 - D606FCB0-487D-49E3-9695-5A6649F3EE87</string>
+			<key>to</key>
+			<string>DE8CA8FA-9BC3-4CAD-A5C3-8B5B22E3C37A - DE8CA8FA-9BC3-4CAD-A5C3-8B5B22E3C37A</string>
 		</dict>
 	</dict>
 	<key>variables</key>

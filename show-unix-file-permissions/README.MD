@@ -37,7 +37,7 @@ Since GitHub can't display Automator workflows in an easy-to-read format, here's
 for f in "$@"
 do
 	fPerm=$(ls -ld "$f" | awk '{print $1}')
-echo "$(basename $f): $fPerm"
+	echo "$(basename $f): $fPerm"
 done
 ~~~~
 

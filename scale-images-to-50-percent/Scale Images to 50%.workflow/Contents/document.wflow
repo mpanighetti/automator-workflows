@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>428</string>
+	<string>444.39</string>
 	<key>AMApplicationVersion</key>
-	<string>2.7</string>
+	<string>2.9</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -50,7 +50,7 @@
 				<key>ActionParameters</key>
 				<dict/>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Duplicate_Finder_Items</string>
+				<string>com.apple.Automator.DuplicateFinderItems</string>
 				<key>CFBundleVersion</key>
 				<string>1.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -81,8 +81,6 @@
 				</array>
 				<key>arguments</key>
 				<dict/>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 			</dict>
 		</dict>
 		<dict>
@@ -96,7 +94,7 @@
 					<false/>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>public.image</string>
 					</array>
 				</dict>
 				<key>AMActionVersion</key>
@@ -122,7 +120,7 @@
 					<string>List</string>
 					<key>Types</key>
 					<array>
-						<string>com.apple.cocoa.path</string>
+						<string>public.image</string>
 					</array>
 				</dict>
 				<key>ActionBundlePath</key>
@@ -229,7 +227,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:241.000000</string>
+				<string>341.000000:292.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Scale Images.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -705,12 +703,10 @@
 						<string>9</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:429.000000</string>
+				<string>341.000000:479.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -720,14 +716,14 @@
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>5786EC29-B30A-499C-B2EC-7681CBB8AA0E</key>
+		<key>0225ABCD-7D2B-423F-8ED9-0E7B39FD455C</key>
 		<dict>
 			<key>from</key>
 			<string>9D39CB7F-0917-4AFD-8CE7-9C857CCFAB80 - 9D39CB7F-0917-4AFD-8CE7-9C857CCFAB80</string>
 			<key>to</key>
 			<string>2467D6B9-4AF2-4EEE-8D27-BF9212561704 - 2467D6B9-4AF2-4EEE-8D27-BF9212561704</string>
 		</dict>
-		<key>ED4B8354-14A4-4280-9D3C-002A596392B1</key>
+		<key>8658D50F-BA69-4263-976E-907CAF48A49A</key>
 		<dict>
 			<key>from</key>
 			<string>E9E53FF9-7014-4E3B-87A5-4E5C4BD56E3D - E9E53FF9-7014-4E3B-87A5-4E5C4BD56E3D</string>
@@ -748,6 +744,27 @@
 	</array>
 	<key>workflowMetaData</key>
 	<dict>
+		<key>applicationBundleID</key>
+		<string>com.apple.finder</string>
+		<key>applicationBundleIDsByPath</key>
+		<dict>
+			<key>/System/Library/CoreServices/Finder.app</key>
+			<string>com.apple.finder</string>
+		</dict>
+		<key>applicationPath</key>
+		<string>/System/Library/CoreServices/Finder.app</string>
+		<key>applicationPaths</key>
+		<array>
+			<string>/System/Library/CoreServices/Finder.app</string>
+		</array>
+		<key>inputTypeIdentifier</key>
+		<string>com.apple.Automator.fileSystemObject.image</string>
+		<key>outputTypeIdentifier</key>
+		<string>com.apple.Automator.nothing</string>
+		<key>presentationMode</key>
+		<integer>15</integer>
+		<key>processesInput</key>
+		<integer>0</integer>
 		<key>serviceApplicationBundleID</key>
 		<string>com.apple.finder</string>
 		<key>serviceApplicationPath</key>
@@ -757,6 +774,10 @@
 		<key>serviceOutputTypeIdentifier</key>
 		<string>com.apple.Automator.nothing</string>
 		<key>serviceProcessesInput</key>
+		<integer>0</integer>
+		<key>systemImageName</key>
+		<string>NSTouchBarDocuments</string>
+		<key>useAutomaticInputType</key>
 		<integer>0</integer>
 		<key>workflowTypeIdentifier</key>
 		<string>com.apple.Automator.servicesMenu</string>

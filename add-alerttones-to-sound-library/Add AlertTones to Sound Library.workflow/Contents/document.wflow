@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>428</string>
+	<string>444.39</string>
 	<key>AMApplicationVersion</key>
-	<string>2.7</string>
+	<string>2.9</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -117,7 +117,7 @@
 					<string>/System/Library/PrivateFrameworks/ToneLibrary.framework/Versions/A/Resources/AlertTones</string>
 				</dict>
 				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.Find_Finder_Items_2</string>
+				<string>com.apple.Automator.FindFinderItems2</string>
 				<key>CFBundleVersion</key>
 				<string>2.1.1</string>
 				<key>CanShowSelectedItemsWhenRun</key>
@@ -188,7 +188,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>472.000000:164.000000</string>
+				<string>341.000000:177.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Find Finder Items 2.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -308,7 +308,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>472.000000:267.000000</string>
+				<string>341.000000:279.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Copy Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -777,7 +777,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>472.000000:427.000000</string>
+				<string>341.000000:438.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1251,7 +1251,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>472.000000:588.000000</string>
+				<string>341.000000:598.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Rename Finder Items.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -1307,19 +1307,17 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string># Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo to tracked files upon completion.
+					<string># Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo from tracked files upon completion.
 
-for file in ~/Library/Sounds/**
-	do
-	mv "$file" "`echo $file | \
-	sed 's/-/ /g' | \
-	sed 's/_/ /g' | \
-	sed 's/Sms/SMS/g' | \
-	sed 's/[0-9]/ &amp;/g' | \
-	sed 's/Receivedmessage/Received Message/g' | \
-	tr -d `"
-done
-</string>
+for file in ~/Library/Sounds/**; do
+  mv "$file" "`echo $file | \
+  sed 's/-/ /g' | \
+  sed 's/_/ /g' | \
+  sed 's/Sms/SMS/g' | \
+  sed 's/[0-9]/ &amp;/g' | \
+  sed 's/Receivedmessage/Received Message/g' | \
+  tr -d `"
+done</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -1432,9 +1430,9 @@ done
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>472.000000:771.000000</string>
+				<string>341.000000:780.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -1442,28 +1440,28 @@ done
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>21DD5E26-D5C8-4E9D-B813-78A00AD24C43</key>
+		<key>0F3F4943-2AC4-45CB-B72E-976C213D3D0F</key>
 		<dict>
 			<key>from</key>
 			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
 			<key>to</key>
 			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>
 		</dict>
-		<key>2D47D54C-B4A2-4F4A-8AAE-AE2730EFC354</key>
+		<key>86D9C608-CFAB-490A-A089-75BA9A30D08D</key>
 		<dict>
 			<key>from</key>
 			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
 			<key>to</key>
 			<string>418E908B-D285-4DEF-9255-12DBAF2E77B3 - 418E908B-D285-4DEF-9255-12DBAF2E77B3</string>
 		</dict>
-		<key>9321552B-C4B2-406C-9E43-D7BED7868993</key>
+		<key>B03520D5-C6C2-4676-A9CE-2E0F3FEE6301</key>
 		<dict>
 			<key>from</key>
 			<string>73CCA856-A32C-4DED-9477-C4B2277E130A - 73CCA856-A32C-4DED-9477-C4B2277E130A</string>
 			<key>to</key>
 			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
 		</dict>
-		<key>D3668397-52A1-43C6-AAA8-3ADEED2C4C54</key>
+		<key>F24FCB50-D012-4A74-8C4F-C2A2B1E800A7</key>
 		<dict>
 			<key>from</key>
 			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>

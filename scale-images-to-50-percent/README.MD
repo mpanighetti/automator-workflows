@@ -10,20 +10,20 @@ This macOS Automator workflow duplicates image files selected in the Finder, res
 
 1. Download the `Scale Images to 50%.workflow` file.
 2. Double-click the .workflow file in the Finder.
-3. When prompted, click **Install** to add it to your system as a Service.
+3. When prompted, click **Install** to add it to your system as a **Quick Action**.
 
-![Service Installer example screenshot](scale-images-service-installer.png?raw=true "Service Installer")
+![Quick Action install example screenshot](scale-images-quick-action-install.png?raw=true "Quick Action")
 
-To run the action in the future, select the target image files in the Finder, then right-click and select *Services > Scale Images to 50%*.
+To run the action in the future, select the target image files in the Finder, then right-click and select *Quick Actions > Scale Images to 50%*.
 
 ## Automator Workflow Breakdown
 
 Since GitHub can't display Automator workflows in an easy-to-read format, here's a breakdown of all the actions. Feel free to recreate manually if you'd rather not run mysterious workflows from the Internet.
 
-### Document Type: Service
+### Document Type: Quick Action
 
 ### Input
-- Services receives selected **image files** in **Finder.app**
+- Workflow receives current **image files** in **Finder.app**
 
 ### Duplicate Finder Items
 

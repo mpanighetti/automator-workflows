@@ -11,7 +11,7 @@ Inspired by a [Six Colors post from Jason Snell lamenting the staleness of macOS
 1. Download the `Add AlertTones to Sound Library.workflow` file.
 2. Open the .workflow file in Automator to run this on your Mac.
 
-Typically it would only need to be run once, but you could save it as an application or service if you want to access it regularly for some reason (it should overwrite any files it's previously copied over as long as Apple hasn't changed their names).
+Typically it would only need to be run once, but you could save it as an application or Quick Action if you want to access it regularly for some reason. Each time it's run, it will overwrite any files it's previously copied over (as long as Apple hasn't changed their names).
 
 ## Automator Workflow Breakdown
 
@@ -20,7 +20,7 @@ Since GitHub can't display Automator workflows in an easy-to-read format, here's
 ### Find Finder Items
 - Search `/System/Library/PrivateFrameworks/ToneLibrary.framework/Versions/A/Resources/AlertTones/`
 - All of the following are true
-    - File extension IS `caf`
+  - File extension IS `caf`
 
 ### Copy Finder Items
 - To `~/Library/Sounds`
@@ -41,16 +41,15 @@ This extra character entry is used to track the new files in the shell script be
 ### Run Shell Script
 ~~~~
 #!/bin/bash
-# Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo to tracked files upon completion.
+# Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo from tracked files upon completion.
 
-for file in ~/Library/Sounds/**
-	do
-	mv "$file" "`echo $file | \
-	sed 's/-/ /g' | \
-	sed 's/_/ /g' | \
-	sed 's/Sms/SMS/g' | \
-	sed 's/[0-9]/ &/g' | \
-	sed 's/Receivedmessage/Received Message/g' | \
-	tr -d `"
+for file in ~/Library/Sounds/**; do
+  mv "$file" "`echo $file | \
+  sed 's/-/ /g' | \
+  sed 's/_/ /g' | \
+  sed 's/Sms/SMS/g' | \
+  sed 's/[0-9]/ &/g' | \
+  sed 's/Receivedmessage/Received Message/g' | \
+  tr -d `"
 done
 ~~~~

@@ -5,6 +5,12 @@
 	<key>NSServices</key>
 	<array>
 		<dict>
+			<key>NSBackgroundColorName</key>
+			<string>background</string>
+			<key>NSBackgroundSystemColorName</key>
+			<string>systemGrayColor</string>
+			<key>NSIconName</key>
+			<string>NSTouchBarGetInfoOutline</string>
 			<key>NSMenuItem</key>
 			<dict>
 				<key>default</key>

@@ -41,7 +41,7 @@ This extra character entry is used to track the new files in the shell script be
 ### Run Shell Script
 ~~~~
 #!/bin/bash
-# Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo from tracked files upon completion.
+# Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" and "PhotosMemoriesNotification" to include a space. Removes Apple logo from tracked files upon completion.
 
 for file in ~/Library/Sounds/**; do
   mv "$file" "`echo $file | \
@@ -50,6 +50,7 @@ for file in ~/Library/Sounds/**; do
   sed 's/Sms/SMS/g' | \
   sed 's/[0-9]/ &/g' | \
   sed 's/Receivedmessage/Received Message/g' | \
+  sed 's/Photosmemoriesnotification/Photos Memories Notification/g' | \
   tr -d `"
 done
 ~~~~

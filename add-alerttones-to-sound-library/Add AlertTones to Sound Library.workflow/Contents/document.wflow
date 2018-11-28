@@ -1307,7 +1307,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string># Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" to include a space. Removes Apple logo from tracked files upon completion.
+					<string># Additional Finder item renaming, targeting every file with the Apple logo character. Replaces dashes and underscores with spaces, capitalizes 'SMS', adds a space before series numbers, and manually corrects "ReceivedMessage" and "PhotosMemoriesNotification" to include a space. Removes Apple logo from tracked files upon completion.
 
 for file in ~/Library/Sounds/**; do
   mv "$file" "`echo $file | \
@@ -1316,6 +1316,7 @@ for file in ~/Library/Sounds/**; do
   sed 's/Sms/SMS/g' | \
   sed 's/[0-9]/ &amp;/g' | \
   sed 's/Receivedmessage/Received Message/g' | \
+  sed 's/Photosmemoriesnotification/Photos Memories Notification/g' | \
   tr -d `"
 done</string>
 					<key>CheckedForUserDefaultShell</key>
@@ -1440,28 +1441,28 @@ done</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>0F3F4943-2AC4-45CB-B72E-976C213D3D0F</key>
-		<dict>
-			<key>from</key>
-			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
-			<key>to</key>
-			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>
-		</dict>
-		<key>86D9C608-CFAB-490A-A089-75BA9A30D08D</key>
-		<dict>
-			<key>from</key>
-			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
-			<key>to</key>
-			<string>418E908B-D285-4DEF-9255-12DBAF2E77B3 - 418E908B-D285-4DEF-9255-12DBAF2E77B3</string>
-		</dict>
-		<key>B03520D5-C6C2-4676-A9CE-2E0F3FEE6301</key>
+		<key>2918769B-A741-4F52-B182-6DF76795CE2B</key>
 		<dict>
 			<key>from</key>
 			<string>73CCA856-A32C-4DED-9477-C4B2277E130A - 73CCA856-A32C-4DED-9477-C4B2277E130A</string>
 			<key>to</key>
 			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
 		</dict>
-		<key>F24FCB50-D012-4A74-8C4F-C2A2B1E800A7</key>
+		<key>4F594092-EF3E-4C96-BC48-492BE0D7C416</key>
+		<dict>
+			<key>from</key>
+			<string>4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419 - 4C28B5AC-6F17-43E4-9F43-8B9C3FCFB419</string>
+			<key>to</key>
+			<string>418E908B-D285-4DEF-9255-12DBAF2E77B3 - 418E908B-D285-4DEF-9255-12DBAF2E77B3</string>
+		</dict>
+		<key>57212F16-8E7E-43C5-B91E-F25494E7482B</key>
+		<dict>
+			<key>from</key>
+			<string>69BA31A3-7EF7-434F-B361-FF57D1D64076 - 69BA31A3-7EF7-434F-B361-FF57D1D64076</string>
+			<key>to</key>
+			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>
+		</dict>
+		<key>737F7F81-E7B2-4A3D-B760-95C8264448A3</key>
 		<dict>
 			<key>from</key>
 			<string>12DD50C8-8135-4981-B534-ED3E01A12803 - 12DD50C8-8135-4981-B534-ED3E01A12803</string>

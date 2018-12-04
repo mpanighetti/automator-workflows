@@ -12,7 +12,7 @@ This macOS Automator workflow counts characters for selected text in Notes, and 
 
 ![Quick Action install example screenshot](count-characters-quick-action-install.png?raw=true "Quick Action")
 
-To run the action in the future, select the target text in any application, then right-click and select *Services > Count Characters*.
+To run the action in the future, select the target text in Notes, then right-click and select *Services > Count Characters*.
 
 ![Show Unix File Permissions example screenshot of results](count-characters-notification-example.png?raw=true "Count Characters Notification Example Screenshot")
 
